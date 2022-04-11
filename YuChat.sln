@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YuChat", "YuChat\YuChat.csproj", "{088588ED-4ED1-4709-8BF5-C07385D107F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{42E535DC-14AA-4B05-8231-789C06B8C369}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{088588ED-4ED1-4709-8BF5-C07385D107F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{088588ED-4ED1-4709-8BF5-C07385D107F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{088588ED-4ED1-4709-8BF5-C07385D107F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42E535DC-14AA-4B05-8231-789C06B8C369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E535DC-14AA-4B05-8231-789C06B8C369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E535DC-14AA-4B05-8231-789C06B8C369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E535DC-14AA-4B05-8231-789C06B8C369}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
