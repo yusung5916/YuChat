@@ -1,5 +1,6 @@
 ﻿using Entities;
 using Microsoft.EntityFrameworkCore;
+using YuChat.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,5 +36,6 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapHub<ChatHub>("/myChatHub");
 
 app.Run();
