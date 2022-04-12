@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\yusun\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\yusung\\YuChat\\YuChat\\YuChat\\YuChat.csproj",
+      "projectUniqueName": "D:\\Gehr\\Yusung\\YuChat\\YuChat\\YuChat.csproj",
       "projectName": "YuChat",
-      "projectPath": "D:\\yusung\\YuChat\\YuChat\\YuChat\\YuChat.csproj",
-      "packagesPath": "C:\\Users\\yusun\\.nuget\\packages\\",
-      "outputPath": "D:\\yusung\\YuChat\\YuChat\\YuChat\\obj\\",
+      "projectPath": "D:\\Gehr\\Yusung\\YuChat\\YuChat\\YuChat.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\Gehr\\Yusung\\YuChat\\YuChat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\yusun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
