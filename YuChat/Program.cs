@@ -1,4 +1,6 @@
-﻿using Entities;
+﻿using BLL;
+using BLL.Interfaces;
+using Entities;
 using Microsoft.EntityFrameworkCore;
 using YuChat.Hubs;
 
@@ -14,7 +16,7 @@ builder.Services.AddDbContext<ChatRoomContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ChatConnection")));
 
 //DI
-
+builder.Services.AddTransient<IUserService, UserService>();
 
 var app = builder.Build();
 
