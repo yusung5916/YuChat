@@ -6,12 +6,10 @@ namespace BLL
 {
     public class UserService : GenericRepository<User>, IUserService
     {
-        private readonly ChatRoomContext _db;
         public UserService(ChatRoomContext db) : base(db)
         {
-            this._db = db;
         }
 
-        public User? Get(string email) => _db.Users.FirstOrDefault(user => user.Email == email);
+        public User? Get(string email) => GetAll().FirstOrDefault(user => user.Email == email);
     }
 }
