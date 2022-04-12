@@ -1,7 +1,19 @@
+﻿using Entities;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//加入SingnalR
+builder.Services.AddSignalR();
+
+//DB
+builder.Services.AddDbContext<ChatRoomContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ChatConnection")));
+
+//DI
+
 
 var app = builder.Build();
 
