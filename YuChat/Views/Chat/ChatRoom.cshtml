@@ -45,12 +45,21 @@
             chatList:[]
         },
         methods: {
-            addChat() {
-
+            async addChat() {
+                let data = new FormData();
+                data.append('email', this.addEmail);
+                let response = await fetch('/ChatApi', {
+                    body: data,
+                    cache: 'no-cache',
+                    method: 'POST'
+                });
+                if(response.ok) {
+                    alert("新增聊天室成功");
+                }
             }
         },
         async beforeCreate() {
-            let response = await fetch('/Chat/GetChatList');
+            let response = await fetch('/ChatApi');
             if(response.ok) {
                 app.chatList = await response.json();
             }

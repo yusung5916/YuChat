@@ -20,6 +20,7 @@ builder.Services.AddDbContext<ChatRoomContext>(options =>
 //DI
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IChatUserService, ChatUserService>();
+builder.Services.AddTransient<IChatService, ChatService>();
 
 var app = builder.Build();
 
