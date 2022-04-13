@@ -4,7 +4,7 @@ using Entities;
 
 namespace BLL
 {
-    internal class ChatUserService : GenericRepository<ChatUser>, IChatUserService
+    public class ChatUserService : GenericRepository<ChatUser>, IChatUserService
     {
 
         public ChatUserService(ChatRoomContext db) : base(db)

@@ -23,6 +23,7 @@ namespace YuChat.Controllers
             var basePass = Convert.ToBase64String(Encoding.UTF8.GetBytes(loginModel.Pass));
             if (user.BasePass != basePass) return NotFound("密碼錯誤");
 
+            HttpContext.Session.SetString("UserID", user.UserId.ToString());
             return Ok("登入成功");
         }
 
@@ -42,6 +43,7 @@ namespace YuChat.Controllers
                 RegisterDate = DateTime.Now
             };
             _userService.Create(user);
+            HttpContext.Session.SetString("UserID", user.UserId.ToString());
 
             return Ok("註冊成功");
         }

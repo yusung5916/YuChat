@@ -3,3 +3,58 @@
 *@
 @{
 }
+<div id="app">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addChatModal">新增聊天室</button>
+<!--新增聊天室model-->
+<div class="modal fade" id="addChatModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">新增聊天室</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">對方Email:</label>
+                        <input type="text" class="form-control" v-model="addEmail">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" @@click="addChat">新增</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br/>
+聊天室列表
+<div v-if="chatList.length!=0">
+    <div v-for="chat in chatList">
+        <button>{{chat.chatName}}</button>
+    </div>
+</div>
+<div v-else>目前無聊天紀錄</div>
+</div>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            addEmail:'',
+            chatList:[]
+        },
+        methods: {
+            addChat() {
+
+            }
+        },
+        async beforeCreate() {
+            let response = await fetch('/Chat/GetChatList');
+            if(response.ok) {
+                app.chatList = await response.json();
+            }
+        }
+
+    })
+</script>

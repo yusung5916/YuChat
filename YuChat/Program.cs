@@ -8,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession();
 //加入SingnalR
 builder.Services.AddSignalR();
 
@@ -17,6 +19,7 @@ builder.Services.AddDbContext<ChatRoomContext>(options =>
 
 //DI
 builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<IChatUserService, ChatUserService>();
 
 var app = builder.Build();
 
@@ -34,6 +37,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
