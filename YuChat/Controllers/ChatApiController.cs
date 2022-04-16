@@ -32,7 +32,7 @@ namespace YuChat.Controllers
         {
             var targetUser = _userService.Get(email);
             if (targetUser == null) return NotFound("該email不是會員");
-            var user = _userService.Get(u => u.UserId == int.Parse(HttpContext.Session.GetString("UserID")));
+            var user = _userService.Get(int.Parse(HttpContext.Session.GetString("UserID")));
             var chat = new Chat()
             {
                 ChatName = $"{user.UserName}與{targetUser.UserName}的聊天室",
