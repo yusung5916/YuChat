@@ -17,7 +17,7 @@ namespace YuChat.Controllers
         public IActionResult Login([FromBody]LoginModel loginModel)
         {
             var result = new Dictionary<string, string>();
-            var user = _userService.Get(loginModel.Email);
+            var user = _userService.Get(user => user.Email == loginModel.Email);
             if (user == null) return NotFound("查無該帳號");
 
             var basePass = Convert.ToBase64String(Encoding.UTF8.GetBytes(loginModel.Pass));
@@ -31,7 +31,7 @@ namespace YuChat.Controllers
         public IActionResult Register([FromBody] LoginModel registerUser)
         {
             var result = new Dictionary<string, string>();
-            var user = _userService.Get(registerUser.Email);
+            var user = _userService.Get(user => user.Email == registerUser.Email);
             if (user != null) return BadRequest("該帳號已被註冊");
 
             var basePass = Convert.ToBase64String(Encoding.UTF8.GetBytes(registerUser.Pass));

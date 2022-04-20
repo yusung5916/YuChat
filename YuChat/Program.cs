@@ -1,5 +1,7 @@
 ﻿using BLL;
 using BLL.Interfaces;
+using DAL;
+using DAL.Interfaces;
 using Entities;
 using Microsoft.EntityFrameworkCore;
 using YuChat.Hubs;
@@ -18,6 +20,10 @@ builder.Services.AddDbContext<ChatRoomContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ChatConnection")));
 
 //DI
+builder.Services.AddTransient<IRepository<User>, GenericRepository<User>>();
+builder.Services.AddTransient<IRepository<Chat>, GenericRepository<Chat>>();
+builder.Services.AddTransient<IRepository<ChatUser>, GenericRepository<ChatUser>>();
+builder.Services.AddTransient<IRepository<MsgDatum>, GenericRepository<MsgDatum>>();
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IChatUserService, ChatUserService>();
 builder.Services.AddTransient<IChatService, ChatService>();

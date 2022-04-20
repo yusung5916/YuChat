@@ -10,11 +10,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DAL
 {
-    public class GenericRepository<T> : ViewRepository<T>, IRepository<T> where T : class
+    public class GenericRepository<T> : IRepository<T> where T : class
     {
         private readonly ChatRoomContext _db;
 
-        public GenericRepository(ChatRoomContext db) : base(db)
+        public GenericRepository(ChatRoomContext db)
         {
             _db = db;
         }
@@ -51,7 +51,7 @@ namespace DAL
         public void Delete(T entity)
         {
             if (entity == null) throw new ArgumentNullException(entity.GetType().Name);
-            _db.Entry(entity).State = EntityState.Deleted;
+            _db.Set<T>().Remove(entity);
             _db.SaveChanges();
         }
 
@@ -61,5 +61,7 @@ namespace DAL
         /// <param name="predicate">data => data.欄位ID = 資料</param>
         /// <returns></returns>
         public T? Get(Expression<Func<T, bool>> predicate) => _db.Set<T>().FirstOrDefault(predicate);
+
+        public IQueryable<T> GetAll() => _db.Set<T>().AsQueryable();
     }
 }

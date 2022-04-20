@@ -30,7 +30,7 @@ namespace YuChat.Controllers
         [HttpPost]
         public IActionResult Add(string email)
         {
-            var targetUser = _userService.Get(email);
+            var targetUser = _userService.Get(user => user.Email == email);
             if (targetUser == null) return NotFound("該email不是會員");
             var user = _userService.Get(u => u.UserId == int.Parse(HttpContext.Session.GetString("UserID")));
             var chat = new Chat()

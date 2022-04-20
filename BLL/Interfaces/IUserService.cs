@@ -1,10 +1,14 @@
-﻿using DAL.Interfaces;
+﻿using System.Linq.Expressions;
+using DAL.Interfaces;
 using Entities;
 
 namespace BLL.Interfaces
 {
-    public interface IUserService : IRepository<User>
+    public interface IUserService
     {
-        User? Get(string email);
+        void Create(User user);
+        void Update(User user);
+        void Delete(User user);
+        User? Get(Expression<Func<User, bool>> predicate);
     }
 }
