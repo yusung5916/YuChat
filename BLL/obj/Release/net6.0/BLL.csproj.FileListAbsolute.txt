@@ -1,0 +1,17 @@
+D:\Gehr\Yusung\YuChat\BLL\bin\Release\net6.0\BLL.deps.json
+D:\Gehr\Yusung\YuChat\BLL\bin\Release\net6.0\BLL.dll
+D:\Gehr\Yusung\YuChat\BLL\bin\Release\net6.0\BLL.pdb
+D:\Gehr\Yusung\YuChat\BLL\bin\Release\net6.0\DAL.dll
+D:\Gehr\Yusung\YuChat\BLL\bin\Release\net6.0\Entities.dll
+D:\Gehr\Yusung\YuChat\BLL\bin\Release\net6.0\DAL.pdb
+D:\Gehr\Yusung\YuChat\BLL\bin\Release\net6.0\Entities.pdb
+D:\Gehr\Yusung\YuChat\BLL\obj\Release\net6.0\BLL.csproj.AssemblyReference.cache
+D:\Gehr\Yusung\YuChat\BLL\obj\Release\net6.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gehr\Yusung\YuChat\BLL\obj\Release\net6.0\BLL.AssemblyInfoInputs.cache
+D:\Gehr\Yusung\YuChat\BLL\obj\Release\net6.0\BLL.AssemblyInfo.cs
+D:\Gehr\Yusung\YuChat\BLL\obj\Release\net6.0\BLL.csproj.CoreCompileInputs.cache
+D:\Gehr\Yusung\YuChat\BLL\obj\Release\net6.0\BLL.csproj.CopyComplete
+D:\Gehr\Yusung\YuChat\BLL\obj\Release\net6.0\BLL.dll
+D:\Gehr\Yusung\YuChat\BLL\obj\Release\net6.0\refint\BLL.dll
+D:\Gehr\Yusung\YuChat\BLL\obj\Release\net6.0\BLL.pdb
+D:\Gehr\Yusung\YuChat\BLL\obj\Release\net6.0\ref\BLL.dll

@@ -5,5 +5,15 @@
 <div class="text-center">
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">登 入</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">註 冊</button>
-
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
 </div>
+
+<script>
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+    }
+</script>

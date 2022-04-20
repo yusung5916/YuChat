@@ -1,0 +1,15 @@
+D:\Gehr\Yusung\YuChat\DAL\bin\Release\net6.0\DAL.deps.json
+D:\Gehr\Yusung\YuChat\DAL\bin\Release\net6.0\DAL.dll
+D:\Gehr\Yusung\YuChat\DAL\bin\Release\net6.0\DAL.pdb
+D:\Gehr\Yusung\YuChat\DAL\bin\Release\net6.0\Entities.dll
+D:\Gehr\Yusung\YuChat\DAL\bin\Release\net6.0\Entities.pdb
+D:\Gehr\Yusung\YuChat\DAL\obj\Release\net6.0\DAL.csproj.AssemblyReference.cache
+D:\Gehr\Yusung\YuChat\DAL\obj\Release\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gehr\Yusung\YuChat\DAL\obj\Release\net6.0\DAL.AssemblyInfoInputs.cache
+D:\Gehr\Yusung\YuChat\DAL\obj\Release\net6.0\DAL.AssemblyInfo.cs
+D:\Gehr\Yusung\YuChat\DAL\obj\Release\net6.0\DAL.csproj.CoreCompileInputs.cache
+D:\Gehr\Yusung\YuChat\DAL\obj\Release\net6.0\DAL.csproj.CopyComplete
+D:\Gehr\Yusung\YuChat\DAL\obj\Release\net6.0\DAL.dll
+D:\Gehr\Yusung\YuChat\DAL\obj\Release\net6.0\refint\DAL.dll
+D:\Gehr\Yusung\YuChat\DAL\obj\Release\net6.0\DAL.pdb
+D:\Gehr\Yusung\YuChat\DAL\obj\Release\net6.0\ref\DAL.dll
